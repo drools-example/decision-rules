@@ -8,13 +8,5 @@
         <source>PROJECT</source>
       </metadata>
     </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>local</id>
-        <url>/home/jboss/business-central-7.37.0/bin/repositories/kie/</url>
-        <source>LOCAL</source>
-      </metadata>
-    </repository>
   </repositories>
 </project-repositories>
