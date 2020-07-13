@@ -1,0 +1,25 @@
+package rules
+ 
+import myteam.decision_model.Counter1
+ 
+rule "Counter1 shower 1" 
+    when $Counter1  : Counter1() 
+ then 
+    System.out.println("Counter1 there (1) : " + $Counter1.getCount() + " and the name is : " + $Counter1.getName());
+ end
+
+ rule "Counter1 shower 2" 
+when 
+    $Counter1  : Counter1()  
+    accumulate (Counter1() ; $cnt : count())
+then 
+    System.out.println("Counter1 there (2) : " + $Counter1.getCount() + " and the name is : " + $Counter1.getName()
+    +" accumaulated value is " +$cnt);
+end 
+
+rule "Counter1 shower 3" 
+when 
+    Counter1()  
+then 
+System.out.println("Counter1s there (3) : ");
+end
