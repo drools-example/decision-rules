@@ -3,4 +3,8 @@
     <ksession name="Person_Stateful" type="stateful" default="false" clockType="realtime"/>
     <ksession name="Person_Stateless" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  
+  <kbase name="rules" packages="rules">
+        <ksession name="ksession-rules"/>
+  </kbase>
 </kmodule>
